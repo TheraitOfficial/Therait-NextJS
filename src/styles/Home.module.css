@@ -1,0 +1,320 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+  font-family: var(--font);
+  background-color: var(--sec-col);
+}
+.Hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:100vw;
+  padding-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top:60px;
+  background-color: var(--main-col);
+  padding: 5px;
+  padding-top: 0;
+}
+
+  .HeroText {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-bottom: 10px;
+      margin-top:2%;
+      margin-left: 7vw;
+  }
+
+      .mainHeroText {
+          display: inline;
+          font-size: 2em;
+          font-weight: 700;
+          line-height: 31px;
+          margin: 5%;
+          margin-right: 10%;
+          margin-left:0;
+          text-align: left;
+          max-width: 75%;
+          color: var(--text-special);
+          line-height: 110%;
+      }
+
+      .HeroSubText {
+          font-size: 1.2em;
+          font-weight: 500;
+          line-height: 19px;
+          margin-right: 10%;
+          margin: 3%;
+          margin-left: 0;
+          margin-top:0;
+          text-align: left;
+          max-width: 75%;
+          color: var(--sec-col);
+      }
+
+      .CTAbox {
+          display: flex;
+          flex-wrap: wrap;
+          max-width: calc(100% - 31%);
+          align-items: center;
+          justify-content: space-between;
+          margin-left:0;
+      }
+
+          .CTA {
+              flex-direction: column;
+              width: auto;
+              height: auto;
+          }
+
+              .CTA_text {
+                  font-size: 1.1em;
+                  font-weight: 700;
+                  align-items: center;
+              }
+
+              .CTAarrow {
+                  vertical-align: middle;
+                  margin-left:2px;
+                  margin-top:5px;
+              }
+
+              .creamText {
+                color: var(--sec-col);
+              }
+              .specialText {
+                  color: var(--text-special);
+              }
+
+  .HeroIMG {
+      width: 276px;
+      height: 259px;
+      margin-top: 5%;
+  }
+
+@media screen and (min-width: 600px) {
+    .Hero {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+  
+        .HeroText {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          width: 50%;
+          margin-top:5%;
+          margin-left: 9vw;
+          max-width: 600px;
+        }
+  
+        .mainHeroText {
+          display: inline;
+          font-size: 2.25em;
+          font-weight: 700;
+          line-height: 40px;
+          margin-right: 10%;
+          text-align: left;
+          margin-left: 0;
+          line-height: 115%;
+        }
+  
+        .HeroSubText {
+            font-size: 1.4em;
+            font-weight: 500;
+            line-height: 31px;
+            margin-right: 10%;
+            margin-bottom: 5%;;
+            margin-top:0;
+            margin-left: 0;
+            text-align: left;
+        }
+  
+        .CTAbox {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-left:0;
+        }
+  
+            .CTA {
+                flex-direction: column;
+                width: auto;
+                height: auto;
+                margin: 0;
+            }
+  
+                .CTA_text {
+                    font-size: 1.25em;
+                    font-weight: 600;
+                    align-items: center;
+                }
+  
+                .CTAarrow {
+                    vertical-align: middle;
+                    margin-left:2px;
+                    margin-top:5px;
+                }
+
+        .HeroIMG {
+            width: 40vw;
+            height: auto;
+            align-self: center;
+            margin: 0;
+        }
+}
+
+@media screen and (min-width: 800px){
+
+      .HeroText {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        margin-left: 9vw;
+      }
+
+      .mainHeroText {
+        display: inline;
+        font-size: 2.5em;
+        font-weight: 700;
+        line-height: 40px;
+        margin-right: 10%;
+        margin-left:0;
+        text-align: left;
+        line-height: 120%;
+      }
+
+      .HeroSubText {
+          font-size: 1.7em;
+          font-weight: 500;
+          line-height: 31px;
+          margin-right: 10%;
+          margin-bottom: 5%;
+          margin-left:0;
+          margin-top:0;
+          text-align: left;
+      }
+
+      .CTAbox {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          margin-left:0;
+      }
+
+              .CTA_text {
+                  font-size: 1.6em;
+              }
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 94%;
+  background-color: var(--sec-col);
+  border-radius: 2em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3vh;
+}
+
+  .AboutTitle {
+      font-size: 2em;
+      color: var(--text-bg-col);
+      font-weight: 700;
+      line-height: 38px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+
+  .AboutText {
+      font-size: 1em;
+      font-weight: 600;
+      line-height: 19px;
+      color: var(--text-bg-col);
+      width:90%;
+      margin: 20px;
+      margin-top:0;
+      text-align: center;
+  }
+
+@media screen and (min-width: 850px) {
+  .About {
+      width: 75vw;
+  }
+
+      .AboutTitle {
+          font-size: 2.5em;
+          line-height: 45px;
+      }
+
+      .AboutText {
+          font-size: 1.5em;
+          line-height: 30px;
+      }
+}
+
+
+@media screen and (min-width: 1400px) {
+    .About {
+        max-width: 50vw;
+    }
+}
+
+.SectionIntro {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 7vh;
+    margin-left: 7vw;
+    color: var(--text-special);
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.sec_services,
+.sec_values,
+.sec_stats,
+.sec_technologies,
+.sec_contact {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75vw;
+    height: 60px;
+    max-width: 280px;
+    background-color: var(--highlight-col);
+    font-size: 2.5em;
+    font-weight: 600;
+    color: var(--sec-col);
+    border-radius: 8px;
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+}
+
+.cta:hover {
+    background: none;
+    border: var(--highlight-col) 3px solid;
+    color: var(--text-special);
+}

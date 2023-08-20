@@ -1,0 +1,262 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 60px;
+    font-family: var(--font);
+}
+
+.HeadText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    height: 80px;
+    background-color: var(--highlight-col);
+    color: var(--text-bg-col);
+    font-size: 1.5em;
+    font-weight: 650;
+    text-align: center;
+}
+
+.i {
+    max-width: 225px;
+}
+
+@media screen and (min-width: 637px) {
+    .HeadText {
+        font-size: 1.8em;
+    }
+
+    .i {
+        max-width: 280px;
+    }
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--main-col);
+    margin:0;
+    padding: 0;
+}
+
+.heroTextBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:90vw;
+    max-width: 90vw;
+    margin-top: 5vh;
+}
+
+.heroTitle {
+    text-align: left;
+    font-size: 1.8em;
+    font-weight: 550;
+    color: var(--text-special);
+}
+
+.heroText {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 475;
+    color: var(--sec-col);
+    margin-top: 0;
+    width: 100%;
+    max-width: 320px;
+}
+
+.heroIMG {
+    margin: 5vh;
+    width: 80vw;
+    height: auto;
+}
+
+.heroIMGbox {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 600px) {
+    .hero {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        width: 100vw;
+        padding-top: 2.5vh;
+        padding-bottom: 1vh;
+        min-height: 350px;
+    }
+
+    .heroTextBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: fit-content;
+        max-width: 50vw;
+        margin-left: 9vw;
+        margin-top: 3vh;
+    }
+
+    .heroTitle {
+        font-size: 3em;
+    }
+
+    .heroText {
+        font-size: 1.5em;
+    }
+
+    .heroIMG {
+        width:40vw;
+        align-self: center;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        width: 100vw;
+    }
+
+    .heroTextBox {
+        margin-top: 10vh;
+    }
+
+    .heroTitle {
+        font-size: 4em;
+    }
+
+    .heroText {
+        font-size: 2em;
+        max-width: 400px;
+    }
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.contentEl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 94%;
+    background-color: var(--sec-col);
+    border-radius: 2em;
+    margin-top: 5vh;  
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contentEl_title {
+    font-size: 2em;
+    color: var(--text-bg-col);
+    font-weight: 700;
+    line-height: 38px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contentEl_text {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 19px;
+    color: var(--text-bg-col);
+    width:90%;
+    margin: 20px;
+    margin-top:0;
+    text-align: center;
+}
+
+@media screen and (min-width: 850px) {
+    .contentEl {
+        width: 75vw;
+    }
+  
+        .contentEl_title {
+            font-size: 2.5em;
+            line-height: 45px;
+        }
+  
+        .contentEl_text {
+            font-size: 1.5em;
+            line-height: 30px;
+        }
+  }
+  
+  
+  @media screen and (min-width: 1400px) {
+      .contentEl {
+          max-width: 50vw;
+      }
+  }
+
+.SectionIntro {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 7vh;
+    margin-left: 7vw;
+    color: var(--text-special);
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.sec_values,
+.sec_contact {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta_box {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75vw;
+    height: 60px;
+    max-width: 280px;
+    background-color: var(--highlight-col);
+    font-size: 2.5em;
+    font-weight: 600;
+    color: var(--sec-col);
+    border-radius: 8px;
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta:hover {
+    background: none;
+    border: var(--highlight-col) 3px solid;
+    color: var(--text-special);
+}

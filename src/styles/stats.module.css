@@ -1,0 +1,30 @@
+.Stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 954px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    padding: 1em;
+    background-color: var(--main-col);
+    border-radius: 1em;
+    margin: 2vh 1.5em;
+}
+
+.text {
+    font-size: 2.25em;
+    font-weight: 600;
+    color: var(--sec-col)
+}
+/*
+.img {
+    width:128px;
+    height: auto;
+}*/

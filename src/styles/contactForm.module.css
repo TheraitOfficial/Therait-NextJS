@@ -1,0 +1,227 @@
+.ContactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 25px;
+    width: 100vw;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.form_item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90vw;
+    min-width: 300px;
+    max-width: 900px;
+    background-color: var(--main-col);
+    border-radius: 2em;
+    padding: 20px;
+    margin: 3vh 0;
+}
+
+.form_item_title {
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.form_item_content_servicesBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+}
+
+.form_item_content_services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0;
+}
+
+.form_item_content_services_el {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--sec-col);
+    padding: 15px 15px;
+    border-radius: 42px;
+    margin:8px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--text-bg-col);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.form_item_content_services_el_applyForJob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--sec-col);
+    padding: 15px 15px;
+    border-radius: 42px;
+    margin:8px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--text-special);
+    margin: 10px;
+}
+
+.choosen {
+    background-color: var(--highlight-col) !important;
+    color: var(--text-bg-col) !important;
+}
+
+.form_item_content_services_el:hover,
+.form_item_content_services_el_applyForJob:hover {
+    background-color: var(--bg-col);
+    border: var(--highlight-col) 3px solid;
+    color: var(--text-special);
+    padding: 12px 12px;
+}
+
+.form_item_content_info {
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    margin: auto;
+}
+
+.form_item_content_info_name {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.form_item_content_info_input_ln:focus,
+.form_item_content_info_input_fn:focus,
+.form_item_content_info_input_email:focus,
+.form_item_content_info_input_companyName:focus,
+.form_item_content_message_textarea:focus {
+    border-bottom: var(--highlight-col) 3px solid;
+    outline: none;
+    color: var(--text-special);
+}
+
+
+.form_item_content_info_input_fn,
+.form_item_content_info_input_ln {
+    background: none;
+    border: none;
+    border-bottom: var(--sec-col) 2px solid;
+    border-radius: 0;
+    color: var(--text-col);
+    font-size: 1.2em;
+    padding: 16px 0;
+    width: 100%;
+    min-width: 235px;
+    margin: 8px 0;
+}
+
+@media screen and (min-width: 500px) {
+.form_item_content_info_input_fn,
+.form_item_content_info_input_ln {
+    width: 40%;
+}
+}
+
+.form_item_content_info_input_email,
+.form_item_content_info_input_companyName {
+    background: none;
+    border: none;
+    border-bottom: var(--sec-col) 2px solid;
+    border-radius: 0;
+    color: var(--text-col);
+    font-size: 1.2em;
+    padding: 16px 0;
+    width: 100%;
+    min-width: 235px;
+    margin: 8px 0;
+}
+
+.form_item_content_message {
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    margin: auto;
+}
+
+.form_item_content_message_textarea {
+    background: none;
+    border: none;
+    border-bottom: var(--sec-col) 2px solid;
+    border-radius: 0;
+    color: var(--text-col);
+    font-size: 1.2em;
+    padding: 16px 0;
+    width: 100%;
+    min-width: 235px;
+    margin: 8px 0;
+    min-height: 200px;
+    max-height: 200px;
+    resize: none;
+}
+
+.form_item_content_budgetBox {
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    margin: auto;
+}
+
+.form_item_content_budget {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.form_item_content_budget_opt {
+    margin: 16px 20px;
+    padding: 15px 30px;
+    background-color: var(--sec-col);
+    border-radius: 4em;
+    color: var(--text-bg-col);
+    font-size: 1.2em;
+    font-weight: 550;
+}
+
+.form_item_content_budget_opt:hover {
+    background: none;
+    border: var(--highlight-col) 3px solid;
+    color: var(--text-special);
+    padding: 12px 27px;
+}
+
+.submit {
+    padding: 15px 30px;
+    border-radius: 3em;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--sec-col);
+    background-color: var(--highlight-col);
+    border: none;
+}
+
+.submit:hover {
+    border: var(--highlight-col) 3px solid;
+    padding: 12px 27px;
+    background: none;
+    color: var(--text-special);
+}

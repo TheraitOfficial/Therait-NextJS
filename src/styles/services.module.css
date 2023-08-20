@@ -1,0 +1,56 @@
+.Services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.Service {
+    background-color: var(--sec-col);
+    width: 300px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+    border-radius: 1em;
+}
+
+.img {
+    width: 175px;
+    height: auto;
+}
+
+.name {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: var(--text-bg-col);
+}
+
+.Service:hover {
+    background-color: var(--main-col);
+}
+
+.Service:hover .name {
+    color: var(--sec-col);
+}
+
+@media screen and (min-width: 340px) {
+    .Service {
+        width: 320px;
+        height: 220px;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+    }
+
+    .img {
+        width: 200px;
+    }
+
+    .name {
+        font-size: 2.2em;
+        margin-bottom: 0;
+    }
+}

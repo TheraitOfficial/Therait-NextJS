@@ -1,0 +1,79 @@
+.Values {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Value {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 220px;
+    background-color: var(--main-col);
+    margin:10px;
+    margin-top:20px;
+    border-radius: 16px;
+}
+
+.Value_head {
+    display: flex;
+    align-items: center;
+    margin-top:10px;
+    margin-left: 15px;
+}
+
+.img {
+    width: 100px;
+    height: auto;
+    margin:0;
+}
+
+.title {
+    margin-left: 15px;
+    font-size: 2.25em;
+    color: var(--text-special);
+    font-weight: 600;
+    max-width: 150px;
+}
+
+.content {
+    max-width: 90%;
+    margin:auto;
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--text-standard);
+}
+
+@media screen and (min-width: 960px){
+    .Values {
+        max-width: 1000px;
+    }
+
+    .Value {
+        width: 400px;
+        height: 280px;
+        margin: 25px;
+    }
+
+    .Value_head {
+        margin-left: 30px;
+    }
+
+    .img {
+        width: 125px;
+    }
+
+    .title {
+        font-size: 3em;
+        max-width: 220px;
+    }
+
+    .content {
+        width: 85%;
+        font-size: 1.25em;
+    }
+}

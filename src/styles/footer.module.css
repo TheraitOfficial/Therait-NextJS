@@ -1,0 +1,99 @@
+.Footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--main-col);
+    width: 100vw;
+}
+
+.mainContent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.HeaderSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--text-sec-col);
+    margin:0.5em;
+}
+
+.ul {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    min-width: 260px;
+}
+
+.li {
+    display: flex;
+    margin: 10px;
+}
+
+.Footer_Nav {
+    font-size: 1.2em;
+    font-weight: 550;
+    color: var(--text-sec-col);
+}
+
+.Footer_Nav_Contact {
+    font-size: 1.2em;
+    font-weight: 550;
+    color: var(--text-special);
+}
+
+.infoIMG,
+.imageBox {
+    width: auto;
+    height: 24px;
+}
+
+.infoContent {
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--text-sec-col);
+    margin:0.25em;
+}
+
+.socialLink {
+    display: flex;
+    align-items: center;
+}
+
+.socialIMG {
+    width: 40px;
+    height: auto;
+}
+
+.socialName {
+    font-size: 1.2em;
+    font-weight: 550;
+    color: var(--text-sec-col);
+    margin: 0.25em
+}
+
+.copyrights {
+    font-size: 1.1em;
+    font-weight: 450;
+    color: var(--text-sec-col);
+}
+
+.privacyPolicy {
+    font-size: 1em;
+    font-weight: 400;
+    color:var(--text-sec-col);
+    margin-bottom: 0.5em;
+}

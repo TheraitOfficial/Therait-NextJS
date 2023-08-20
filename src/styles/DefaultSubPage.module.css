@@ -1,0 +1,49 @@
+.main {
+    padding-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--sec-col);
+    font-family: var(--font);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70vh;
+    padding-top: 10vh;
+}
+
+.ContactIntro {
+    color: var(--main-col);
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 10vh;
+    max-width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.CTA {
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--sec-col);
+    font-size: 2.25em;
+    font-weight: 600;
+    background-color: var(--highlight-col);
+    width: 260px;
+    height: 60px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.CTA:hover {
+    background: none;
+    border: var(--highlight-col) 3px solid;
+    color: var(--text-special);
+}

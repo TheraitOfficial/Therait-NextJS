@@ -1,0 +1,55 @@
+:root {
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  --sec-col: #fff;
+  --main-col: #00052F;
+  /* --main-col: #0A014F; */
+  /* --main-col: #110064; */
+  --highlight-col: #fc3792;
+  /* --highlight-col: #73EEDC; */
+  --third-bg-col: #000640;
+  /* --third-bg-col: #000852; */
+
+  --text-col: #D7A79C;
+  --text-special: #fc3792;
+  --text-bg-col: #00052F;
+  --text-rare-col: #000640;
+  --text-standard: #fff;
+  /* --text-rare-col: #826DED; */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-col: #00052F;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

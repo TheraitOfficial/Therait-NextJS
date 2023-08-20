@@ -1,0 +1,57 @@
+.skillset {
+    display: flex;
+    flex-direction: column;
+    width:100vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: 600;
+    color: #D7A79C;
+}
+
+.SkillsetContent {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+.svgLeft {
+    height: 48px;
+    width: auto;
+    rotate: 180deg;
+    margin-bottom:18px;
+}
+
+.svgRight {
+    height: 48px;
+    width: auto;
+    margin-top:18px;
+}
+
+.withColor {
+    color: #826DED;
+    cursor: pointer;
+}
+
+.withourColor {
+    color: #e3e3e3;
+}
+
+.ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.SkillIMG {
+    height: 64px;
+    width: auto;
+    margin: 16px;
+}

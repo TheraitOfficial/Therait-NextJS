@@ -1,0 +1,20 @@
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    min-width: 280px;
+    max-width: 858px;
+    margin: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--third-bg-col);
+    padding: 1em;
+    border-radius: 2em;
+}
+
+.img {
+    height: 64px;
+    width: auto;
+    margin: 16px;
+}
