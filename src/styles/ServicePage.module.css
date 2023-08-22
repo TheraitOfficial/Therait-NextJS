@@ -155,14 +155,14 @@
 }
 
 .bonuses_content_el {
-    width: 80vw;
-    height: fit-content;
+    width: 90vw;
+    height: auto;
     max-width:400px;
     display: flex;
     flex-wrap: nowrap;
     border-top: var(--highlight-col) 5px solid;
-    margin-right: 3vw;
-    margin-left: 7vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
     margin-bottom: 1vh;
     margin-top: 3vh;
     text-align: center;
@@ -194,8 +194,8 @@
 @media screen and (min-width: 1024px) {
 
     .bonuses_content_el {
-        margin-right: 1vw;
-        margin-left: 9vw;
+        margin-right: 5vw;
+        margin-left: 5vw;
     }
 }
 
@@ -249,7 +249,7 @@
     margin-top: 3vh;
     margin-left:auto;
     margin-right: auto;
-    width: fit-content;
+    width: auto;
     width: 90vw;
 }
 
@@ -380,7 +380,7 @@
 }
 
 .Offers_content_el_recomendation {
-    font-size: 1em;
+    font-size: 0.8em;
     max-width: 240px;
     text-align: center;
     font-weight: 400;
@@ -400,16 +400,15 @@
     text-align: center;
     font-weight: 400;
     margin-bottom: 10px;
-    list-style: none;
-    height: 174px;
+    list-style-image: url('../../public/therait-list-6px.webp');
+    height: 300px;
     margin-left: 24px;
 }
 
 .Offers_content_el_features_el {
-    list-style-image: url('../../public/therait-list-6px.webp');
     width: 194px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
 .Offers_content_el_cta {

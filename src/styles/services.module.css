@@ -7,7 +7,7 @@
 }
 
 .Service {
-    background-color: var(--sec-col);
+    background-color: var(--main-col);
     width: 300px;
     height: 225px;
     display: flex;
@@ -26,14 +26,6 @@
 .name {
     font-size: 1.8em;
     font-weight: 600;
-    color: var(--text-bg-col);
-}
-
-.Service:hover {
-    background-color: var(--main-col);
-}
-
-.Service:hover .name {
     color: var(--sec-col);
 }
 
@@ -41,8 +33,8 @@
     .Service {
         width: 320px;
         height: 220px;
-        padding-top: 0.75em;
-        padding-bottom: 0.75em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
     }
 
     .img {
