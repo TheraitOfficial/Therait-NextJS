@@ -119,7 +119,7 @@ You can try contact us via email. Our email: theraitkontakt@gmail.com`))
                       </div>
                       <input className={styles.form_item_content_info_input_email} onChange={e => setEmail(e.target.value)} placeholder='Your email address*' required/>
                       <input className={styles.form_item_content_info_input_companyName} onChange={e => setCompanyName(e.target.value)} placeholder='Your company name'/>
-                      <input className={styles.form_item_content_info_input_companyName} onChange={e => setCompanyWebsite(e.target.value)} placeholder='Your company website'/>
+                      <input className={styles.form_item_content_info_input_companyName} onChange={e => setCompanyWebsite(e.target.value)} placeholder='Your website'/>
                 </div>
             </div>
             <div className={styles.form_item}>
