@@ -287,7 +287,7 @@ export default function Home({ logo, navLinks, hero, about, services, values, st
         animate={{x: 0, opacity: 1}}
         transition={{type: 'spring', duration: 0.8}}>
         <Image className={styles.HeroIMG}
-          src={`${process.env.API_URL}${hero.Image.data.attributes.url}`}
+          src={`${hero.Image.data.attributes.url}`}
           alt={hero.Image.data.attributes.alternativeText}
           width={hero.Image.data.attributes.width}
           height={hero.Image.data.attributes.height}
@@ -366,17 +366,11 @@ export const getStaticProps: GetStaticProps = async () => {
   const statsRes = await fetch(`${process.env.API_URL}/api/stats`)
   const stats = await statsRes.json()
 
- // const technologiesRes = await fetch(`${process.env.API_URL}/api/skillsets?populate=*`)
- // const technologies = await technologiesRes.json()
-
   const sectionTitleRes = await fetch(`${process.env.API_URL}/api/section-title`)
   const sectionTitle = await sectionTitleRes.json();
 
   const enableRes = await fetch(`${process.env.API_URL}/api/enable`)
   const enable = await enableRes.json()
-
-  // const subSerRes = await fetch(`${process.env.API_URL}/api/sub-services`)
-  // const subSer = await subSerRes.json()
 
   const contactRes = await fetch(`${process.env.API_URL}/api/contacts?populate=*`)
   const contact = await contactRes.json()
