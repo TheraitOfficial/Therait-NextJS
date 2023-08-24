@@ -6,7 +6,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
 import Link from 'next/link';
-import { sortArrays, sortArraysBy } from '@/scripts/sortArray';
+import { sortArrays } from '@/scripts/sortArray';
 import Head from 'next/head';
 import { motion, Variants } from 'framer-motion'
 
@@ -120,24 +120,6 @@ interface Props {
                 }
               }[]
             }
-            // methods_and_technologies: {
-            //   data: {
-            //       attributes: {
-            //         title: string,
-            //         customID: number,
-            //         Image: {
-            //           data: {
-            //             attributes: {
-            //                 url: string,
-            //                 alternativeText: string,
-            //                 width: number,
-            //                 height: number,
-            //             }
-            //           }
-            //         }
-            //       }
-            //   }[]
-            // },
             bonuses: {
                 data: {
                     attributes: {
@@ -407,7 +389,7 @@ function Service({ logo, navLinks, services, enable, contact, socials, copyright
         <Link href={`/contact`} className={styles.ctaBottom}>
             Contact us
         </Link></motion.div>
-        <Footer navLinks={navLinks} contact={contact} socials={socials} copyrights={copyrights}/>
+        <Footer navLinks={navLinks} contact={contact} socials={socials} copyrights={`ⒸTherait ${new Date().getFullYear()} | All Rights Reserved`}/>
     </div>
     </>
   )

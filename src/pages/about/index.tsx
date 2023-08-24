@@ -211,10 +211,6 @@ function index({ logo, navLinks, aboutPage, sectionTitle, enable, values, subSer
               <p className={styles.SectionIntro}>{aboutPage.whyTrustUs}</p>
               <Values values={values}/>
             </motion.div>
-            {/* <div className={styles.sec_contact}>
-                <p className={styles.SectionIntro}>{sectionTitle.ContactUs}</p>
-                <ContactForm subServices={subServices}/>
-            </div> */}
             <motion.div className={styles.cta_box} whileTap={{scale: 0.9}} whileHover={{scale: 1.05}}>
             <Link href={`/contact`} className={styles.cta}>
             Contact us

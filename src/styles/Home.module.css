@@ -24,7 +24,7 @@
   .HeroText {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
       padding-bottom: 10px;
       margin-top:2%;
       margin-left: 7vw;

@@ -37,7 +37,6 @@
     width: 90vw;
     max-width: 400px;
     margin-top: 3vh;
-    margin-left: 7vw;
     margin-bottom: 1.5vh;
 }
 
@@ -162,6 +161,7 @@
     flex-wrap: nowrap;
     border-top: var(--highlight-col) 5px solid;
     margin-right: 5vw;
+    padding:10px;
     margin-left: 5vw;
     margin-bottom: 1vh;
     margin-top: 3vh;
@@ -268,10 +268,10 @@
     align-items: flex-start;
     width:94vw;
     max-width: 300px;
-    margin-right: 0.25vw;
+    margin-right: 3vw;
     margin-bottom: 1vh;
     margin-top: 5vh;
-    margin-left: 7vw;
+    margin-left: 3vw;
 }
 
 .subSer_content_el_img {
@@ -352,14 +352,17 @@
     width: 260px;
     min-height: 400px;
     border-radius: 1em;
-    background-color: var(--main-col);
     margin: 10px;
     margin-top: 1.5vh;
+    padding: 8px;
+    background-color: var(--main-col);
 }
 
 .Offers_content_el_img {
     margin-top: 20px;
     margin-bottom: 5px;
+    width: 200px;
+    height: auto;
 }
 
 .Offers_content_el_title {
