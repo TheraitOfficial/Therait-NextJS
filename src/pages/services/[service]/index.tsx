@@ -348,7 +348,7 @@ function Service({ logo, navLinks, services, enable, contact, socials, copyright
                           width={200}
                           height={120}/>
                           <p className={styles.Offers_content_el_title}>{el.attributes.title}</p>
-                          <p className={styles.Offers_content_el_price}><i>{el.attributes.price}$/month</i></p>
+                          <p className={styles.Offers_content_el_price}><i>{el.attributes.price}</i></p>
                           <p className={styles.Offers_content_el_recomendation}>*recomended for {el.attributes.recomendedFor}</p>
                           <hr className={styles.Offers_content_el_hr}/>
                           <ul className={styles.Offers_content_el_features}>
@@ -364,20 +364,6 @@ function Service({ logo, navLinks, services, enable, contact, socials, copyright
                 ))}
           </div>
         </motion.div>}
-        {/* <div className={styles.MandT}>
-          <p className={styles.MandT_title}>
-            {services[index].attributes.methodsAndTechniquesIntro}
-          </p>
-          <div className={styles.MandT_content}>
-              {services[index].attributes.methods_and_technologies.data.map(el => (
-                  <Image className={styles.MandT_img} key={el.attributes.customID}
-                    src={`${process.env.API_URL}${el.attributes.Image.data.attributes.url}`}
-                    alt={el.attributes.Image.data.attributes.alternativeText}
-                    width={el.attributes.Image.data.attributes.width}
-                    height={el.attributes.Image.data.attributes.height}/>
-              ))}
-          </div>
-        </div> */}
         <motion.div className={styles.FAQ}
         initial='offscreen'
         whileInView='onscreen'
