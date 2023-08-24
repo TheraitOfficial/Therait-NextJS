@@ -75,13 +75,13 @@ function Header({ logo, navLinks } : HeaderProps) {
     <motion.header className={styles.Header}>
         <Link href={'/'}>
         <Image className={styles.Logo}
-            src={`${process.env.API_URL}${logo.Logo.data.attributes.url}`}
+            src={`${logo.Logo.data.attributes.url}`}
             alt={logo.Logo.data.attributes.alternativeText}
             width={logo.Logo.data.attributes.width} height={logo.Logo.data.attributes.height}
             priority={true}/>
         {logo.SideLogo.data &&
         <Image className={styles.SideLogo}
-            src={`${process.env.API_URL}${logo.SideLogo.data.attributes.url}`}
+            src={`${logo.SideLogo.data.attributes.url}`}
             alt={logo.SideLogo.data.attributes.alternativeText}
             width={logo.SideLogo.data.attributes.width} height={logo.SideLogo.data.attributes.height}
             priority={true}/>}</Link>

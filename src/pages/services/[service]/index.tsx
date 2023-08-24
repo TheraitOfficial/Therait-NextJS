@@ -273,7 +273,7 @@ function Service({ logo, navLinks, services, enable, contact, socials, copyright
             animate={{x: 0}}
             transition={{type: 'spring', duration: 0.8}}>
             <Image className={styles.heroIMG}
-                src={`${process.env.API_URL}${services[index].attributes.Image.data.attributes.url}`}
+                src={`${services[index].attributes.Image.data.attributes.url}`}
                 alt={services[index].attributes.Image.data.attributes.alternativeText}
                 width={services[index].attributes.Image.data.attributes.width}
                 height={services[index].attributes.Image.data.attributes.height}/></motion.div></div>
@@ -293,7 +293,7 @@ function Service({ logo, navLinks, services, enable, contact, socials, copyright
               {services[index].attributes.bonuses.data.map(el => (
                 <div className={styles.bonuses_content_el} key={el.attributes.customID}>
                     <Image className={styles.bonuses_content_el_img}
-                        src={`${process.env.API_URL}${el.attributes.Image.data.attributes.url}`}
+                        src={`${el.attributes.Image.data.attributes.url}`}
                         alt={el.attributes.Image.data.attributes.alternativeText}
                         width={el.attributes.Image.data.attributes.width}
                         height={el.attributes.Image.data.attributes.height}/>
@@ -319,7 +319,7 @@ function Service({ logo, navLinks, services, enable, contact, socials, copyright
                 {services[index].attributes.sub_services.data.map(el => (
                     <div className={styles.subSer_content_el} key={el.attributes.customID}>
                         <Image className={styles.subSer_content_el_img}
-                          src={`${process.env.API_URL}${el.attributes.Image.data.attributes.url}`}
+                          src={`${el.attributes.Image.data.attributes.url}`}
                           alt={el.attributes.Image.data.attributes.alternativeText}
                           width={el.attributes.Image.data.attributes.width}
                           height={el.attributes.Image.data.attributes.height}/>
@@ -343,7 +343,7 @@ function Service({ logo, navLinks, services, enable, contact, socials, copyright
                 {services[index].attributes.offers.data.map(el => (
                     <div className={styles.Offers_content_el} key={el.attributes.customID}>
                         <Image className={styles.Offers_content_el_img}
-                          src={`${process.env.API_URL}${el.attributes.Image.data.attributes.url}`}
+                          src={`${el.attributes.Image.data.attributes.url}`}
                           alt={el.attributes.Image.data.attributes.alternativeText}
                           width={200}
                           height={120}/>

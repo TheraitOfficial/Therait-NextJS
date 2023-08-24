@@ -30,7 +30,7 @@ function OurClients({ clients }:Props) {
             <div className={styles.clients_content}>
                   {clients.map(client => (
                       <Image className={styles.logo} key={client.attributes.customID}
-                        src={`${process.env.API_URL}${client.attributes.Logo.data.attributes.url}`}
+                        src={`${client.attributes.Logo.data.attributes.url}`}
                         alt={client.attributes.Logo.data.attributes.alternativeText}
                         width={client.attributes.Logo.data.attributes.width}
                         height={client.attributes.Logo.data.attributes.height}/>

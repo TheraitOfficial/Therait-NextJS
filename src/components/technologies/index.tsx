@@ -25,7 +25,7 @@ function Technologies({ technologies }:Props) {
     <div className={styles.technologies}>
         {technologies.map(el => (
             <Image className={styles.img} key={el.attributes.customID}
-                src={`${process.env.API_URL}${el.attributes.Image.data.attributes.url}`}
+                src={`${el.attributes.Image.data.attributes.url}`}
                 alt={el.attributes.Image.data.attributes.alternativeText}
                 width={el.attributes.Image.data.attributes.width}
                 height={el.attributes.Image.data.attributes.height}/>

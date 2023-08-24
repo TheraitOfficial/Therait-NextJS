@@ -31,7 +31,7 @@ function Values({ values }:Props) {
           <div className={styles.Value} key={value.attributes.customID}>
               <div className={styles.Value_head}> 
                   <Image className={styles.img}
-                    src={`${process.env.API_URL}${value.attributes.Icon.data.attributes.url}`}
+                    src={`${value.attributes.Icon.data.attributes.url}`}
                     alt={value.attributes.Icon.data.attributes.alternativeText}
                     width={value.attributes.Icon.data.attributes.width}
                     height={value.attributes.Icon.data.attributes.height}/>

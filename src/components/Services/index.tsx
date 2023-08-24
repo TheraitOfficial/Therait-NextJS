@@ -35,7 +35,7 @@ function Services({ services } : Props) {
             <motion.div className={styles.Service}
             whileTap={{scale: 0.95}} whileHover={{scale: 1.05}}>
                 <Image className={styles.img}
-                    src={`${process.env.API_URL}${service.attributes.Image.data.attributes.url}`}
+                    src={`${service.attributes.Image.data.attributes.url}`}
                     alt={service.attributes.Image.data.attributes.alternativeText}
                     width={service.attributes.Image.data.attributes.width}
                     height={service.attributes.Image.data.attributes.height}/>

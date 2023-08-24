@@ -107,7 +107,7 @@ function Footer({ navLinks, contact, socials, copyrights} : Props) {
                     <li className={styles.li} key={info.attributes.customID}>
                         {info.attributes.Icon.data?
                         <Image className={styles.infoIMG}
-                        src={`${process.env.API_URL}${info.attributes.Icon.data.attributes.url}`}
+                        src={`${info.attributes.Icon.data.attributes.url}`}
                         alt={info.attributes.Icon.data.attributes.alternativeText}
                         width={info.attributes.Icon.data.attributes.width}
                         height={info.attributes.Icon.data.attributes.height}/>
@@ -123,7 +123,7 @@ function Footer({ navLinks, contact, socials, copyrights} : Props) {
                 {socials.map(social => (
                     <li className={styles.li} key={social.attributes.customID}>
                         <Link href={social.attributes.linkToProfile} target='_blank' className={styles.socialLink}><Image className={styles.socialIMG}
-                        src={`${process.env.API_URL}${social.attributes.Icon.data.attributes.url}`}
+                        src={`${social.attributes.Icon.data.attributes.url}`}
                         alt={social.attributes.Icon.data.attributes.alternativeText}
                         width={social.attributes.Icon.data.attributes.width}
                         height={social.attributes.Icon.data.attributes.height}/>

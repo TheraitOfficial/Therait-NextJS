@@ -186,7 +186,7 @@ function index({ logo, navLinks, aboutPage, sectionTitle, enable, values, subSer
                 animate={{x: 0}}
                 transition={{type: 'spring', duration: 0.8}}>
                 <Image className={styles.heroIMG}
-                  src={`${process.env.API_URL}${aboutPage.Image.data.attributes.url}`}
+                  src={`${aboutPage.Image.data.attributes.url}`}
                   alt={aboutPage.Image.data.attributes.alternativeText}
                   width={aboutPage.Image.data.attributes.width}
                   height={aboutPage.Image.data.attributes.height} priority={true}/></motion.div>

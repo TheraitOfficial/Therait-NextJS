@@ -8,7 +8,6 @@ import ContactForm from '@/components/ContactForm'
 import Services from '@/components/Services'
 import { GetServerSideProps, GetStaticProps } from 'next'
 import Values from '@/components/Values/indes'
-//import Technologies from '@/components/technologies'
 import Stats from '@/components/Stats'
 import { motion, Variants } from 'framer-motion'
 
